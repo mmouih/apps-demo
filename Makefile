@@ -13,3 +13,6 @@ sf_update:
 	composer update symfony/*
 generate:
 	./vendor/bin/phpgen generate $(dto) $(file)  -f
+
+pest:
+	./vendor/bin/pest
