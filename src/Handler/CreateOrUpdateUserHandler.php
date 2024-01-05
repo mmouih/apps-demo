@@ -2,11 +2,15 @@
 
 namespace App\Handler;
 
+use App\Payload\PayloadInterface;
 use App\Payload\User;
 
-class CreateOrUpdateUserHandler
+final class CreateOrUpdateUserHandler implements HandlerInterface
 {
-    public function handle(User $user): void
+    /**
+     * @param User $payload
+     */
+    public function handle(PayloadInterface $payload): void
     {
     }
 }

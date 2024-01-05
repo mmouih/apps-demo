@@ -6,7 +6,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\Type;
 
-readonly class User
+readonly class User implements PayloadInterface
 {
     public function __construct(
         #[Length(min: 3)]

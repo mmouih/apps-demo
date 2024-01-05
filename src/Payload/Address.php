@@ -2,7 +2,7 @@
 
 namespace App\Payload;
 
-readonly class Address
+readonly class Address implements PayloadInterface
 {
     public function __construct(
         public string $address,
